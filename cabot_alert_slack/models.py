@@ -35,6 +35,7 @@ class SlackAlert(AlertPlugin):
     author = "Luka Blaskovic"
 
     def send_alert(self, service, users, duty_officers):
+        print('SEND_ALERT')
         alert = True
         slack_aliases = []
         users = list(users) + list(duty_officers)
